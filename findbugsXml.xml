@@ -1,2 +1,4 @@
-<FindBugsFilter>
-</FindBugsFilter>
+<fileset dir="${server.src}" casesensitive="yes">
+  <include name="**/*.java"/>
+  <exclude name="**/*Test*"/>
+</fileset>
