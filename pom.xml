@@ -89,6 +89,11 @@
                     </dependencies>
                 </plugin>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>4.0.0</version>
+                </plugin>
+                <plugin>
                   <groupId>org.codehaus.mojo</groupId>
                   <artifactId>findbugs-maven-plugin</artifactId>
                   <version>5.0.0</version>
@@ -101,12 +106,37 @@
                     </execution>
                   </executions>
                 </plugin>
+                <plugin>
+                  <groupId>org.jacoco</groupId>
+                  <artifactId>jacoco-maven-plugin</artifactId>
+                  <version>3.0.4</version>
+                  <executions>
+                    <execution>
+                      <id>prepare-agent</id>
+                      <goals>
+                        <goal>prepare-agent</goal>
+                      </goals>
+                    </execution>
+                  </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
         <finalName>ROOT</finalName>
     </build>
     <reporting>
         <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-checkstyle-plugin</artifactId>
+              <version>4.0.0</version>
+              <reportSets>
+                <reportSet>
+                  <reports>
+                    <report>checkstyle</report>
+                  </reports>
+                </reportSet>
+              </reportSets>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
