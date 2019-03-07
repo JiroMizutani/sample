@@ -96,7 +96,7 @@
                 <plugin>
                   <groupId>org.codehaus.mojo</groupId>
                   <artifactId>findbugs-maven-plugin</artifactId>
-                  <version>5.0.0</version>
+                  <version>3.0.0</version>
                   <executions>
                     <execution>
                       <phase>compile</phase>
@@ -128,7 +128,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-checkstyle-plugin</artifactId>
-              <version>4.0.0</version>
+              <version>2.13</version>
               <reportSets>
                 <reportSet>
                   <reports>
@@ -140,7 +140,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>5.0.0</version>
+                <version>3.0.0</version>
             </plugin>
         </plugins>
     </reporting>
