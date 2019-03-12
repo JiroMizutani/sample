@@ -23,6 +23,6 @@ artifacts:
     - template.yml
     - src/*
     - scripts/*
-    - target/ROOT.war
+    - target/*
     - template-configuration.json
-    - classes/*
+    - test-reports/*
