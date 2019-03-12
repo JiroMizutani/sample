@@ -100,6 +100,13 @@
                       </goals>
                     </execution>
                   </executions>
+                  <configuration>
+                    <configLocation>checkstyle.xml</configLocation>
+                    <violationSeverity>warning</violationSeverity>
+                    <encoding>UTF-8</encoding>
+                    <consoleOutput>true</consoleOutput>
+                    <outputFile>${project.build.directory}/site/checkstyle/checkstyle-result.xml</outputFile>
+                  </configuration>
                 </plugin>
                 <plugin>
                   <groupId>org.codehaus.mojo</groupId>
@@ -113,6 +120,15 @@
                       </goals>
                     </execution>
                   </executions>
+                  <configuration>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                    <failOnError>true</failOnError>
+                    <xmlOutput>true</xmlOutput>
+                    <outputEncoding>UTF-8</outputEncoding>
+                    <xmlOutputDirectory>target/site/findbugs</xmlOutputDirectory>
+                    <findbugsXmlOutputDirectory>target/site/findbugs</findbugsXmlOutputDirectory>
+                  </configuration>
                 </plugin>
                 <plugin>
                   <groupId>org.jacoco</groupId>
