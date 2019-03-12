@@ -1,3 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module name = "Checker">
+<module name="AvoidStarImport">
+  <property name="excludes" value="java.io,java.net,java.lang.Math"/>
+  <property name="allowClassImports" value="false"/>
+  <property name="allowStaticMemberImports" value="false"/>
 </module>
