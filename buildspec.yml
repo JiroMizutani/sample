@@ -24,3 +24,5 @@ artifacts:
     - scripts/*
     - target/ROOT.war
     - template-configuration.json
+    - classes/*
+    
