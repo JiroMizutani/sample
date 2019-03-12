@@ -89,9 +89,17 @@
                     </dependencies>
                 </plugin>
                 <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>2.13</version>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-checkstyle-plugin</artifactId>
+                  <version>2.13</version>
+                  <executions>
+                    <execution>
+                      <phase>test</phase>
+                      <goals>
+                        <goal>check</goal>
+                      </goals>
+                    </execution>
+                  </executions>
                 </plugin>
                 <plugin>
                   <groupId>org.codehaus.mojo</groupId>
@@ -99,9 +107,9 @@
                   <version>3.0.0</version>
                   <executions>
                     <execution>
-                      <phase>compile</phase>
+                      <phase>test</phase>
                       <goals>
-                        <goal>findbugs</goal>
+                        <goal>check</goal>
                       </goals>
                     </execution>
                   </executions>
