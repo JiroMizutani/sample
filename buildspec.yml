@@ -26,3 +26,5 @@ artifacts:
     - target/*
     - template-configuration.json
     - test-reports/*
+    - findbugs.xml
+    - checkstyle-result.xml
